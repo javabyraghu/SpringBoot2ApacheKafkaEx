@@ -1,0 +1,201 @@
+2021-04-05 19:02:43.324  INFO 5212 --- [main] .n.r.SpringBoot2ApacheKafkaExApplication : Starting SpringBoot2ApacheKafkaExApplication on nit with PID 5212 (E:\SpringBoot6PM_FEB_2021\SpringBoot2ApacheKafkaEx\target\classes started by nareshit in E:\SpringBoot6PM_FEB_2021\SpringBoot2ApacheKafkaEx)
+2021-04-05 19:02:43.327  INFO 5212 --- [main] .n.r.SpringBoot2ApacheKafkaExApplication : No active profile set, falling back to default profiles: default
+2021-04-05 19:02:43.891  INFO 5212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-05 19:02:43.944  INFO 5212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 1 JPA repository interfaces.
+2021-04-05 19:02:44.502  INFO 5212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2021-04-05 19:02:44.511  INFO 5212 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-05 19:02:44.511  INFO 5212 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-05 19:02:44.598  INFO 5212 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-05 19:02:44.598  INFO 5212 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1235 ms
+2021-04-05 19:02:44.762  INFO 5212 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-05 19:02:44.807  INFO 5212 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-05 19:02:44.923  INFO 5212 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-05 19:02:45.008  INFO 5212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-05 19:02:45.292  INFO 5212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-05 19:02:45.305  INFO 5212 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-05 19:02:47.395  INFO 5212 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-05 19:02:47.408  INFO 5212 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 19:02:47.752  WARN 5212 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-05 19:02:47.856  INFO 5212 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-05 19:02:48.120  INFO 5212 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-05 19:02:48.201  INFO 5212 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.1
+2021-04-05 19:02:48.201  INFO 5212 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 0efa8fb0f4c73d92
+2021-04-05 19:02:48.201  INFO 5212 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1617629568200
+2021-04-05 19:02:48.205  INFO 5212 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group-id-1, groupId=group-id] Subscribed to topic(s): my-tpc
+2021-04-05 19:02:48.207  INFO 5212 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-04-05 19:02:48.225  INFO 5212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9898 (http) with context path ''
+2021-04-05 19:02:48.233  INFO 5212 --- [main] .n.r.SpringBoot2ApacheKafkaExApplication : Started SpringBoot2ApacheKafkaExApplication in 5.27 seconds (JVM running for 5.804)
+2021-04-05 19:02:48.442  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group-id-1, groupId=group-id] Cluster ID: e4pq_CwCRSq-IwKNVcj2hw
+2021-04-05 19:02:48.445  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group-id-1, groupId=group-id] Discovered group coordinator nit:9092 (id: 2147483647 rack: null)
+2021-04-05 19:02:48.448  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group-id-1, groupId=group-id] (Re-)joining group
+2021-04-05 19:02:48.458  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group-id-1, groupId=group-id] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2021-04-05 19:02:48.458  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group-id-1, groupId=group-id] (Re-)joining group
+2021-04-05 19:02:48.465  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-id-1, groupId=group-id] Finished assignment for group at generation 3: {consumer-group-id-1-22cf831e-b9de-44d5-9317-d5e3f22fe9e8=Assignment(partitions=[my-tpc-0])}
+2021-04-05 19:02:48.471  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group-id-1, groupId=group-id] Successfully joined group with generation 3
+2021-04-05 19:02:48.476  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-id-1, groupId=group-id] Adding newly assigned partitions: my-tpc-0
+2021-04-05 19:02:48.488  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-id-1, groupId=group-id] Setting offset for partition my-tpc-0 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[nit:9092 (id: 0 rack: null)], epoch=0}}
+2021-04-05 19:02:48.489  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-id: partitions assigned: [my-tpc-0]
+2021-04-05 19:03:12.622  INFO 5212 --- [http-nio-9898-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-05 19:03:12.622  INFO 5212 --- [http-nio-9898-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-05 19:03:12.628  INFO 5212 --- [http-nio-9898-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2021-04-05 19:03:12.663  INFO 5212 --- [http-nio-9898-exec-1] i.n.raghu.rest.KafkaRestController       : REST CONTROLLER IS ABOUT TO SEND MESSAGE
+2021-04-05 19:03:12.663  INFO 5212 --- [http-nio-9898-exec-1] i.n.raghu.service.ProducerService        : SENDING MESSAGE TO KAFKA RUNTIME
+2021-04-05 19:03:12.668  INFO 5212 --- [http-nio-9898-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-04-05 19:03:12.682  INFO 5212 --- [http-nio-9898-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.1
+2021-04-05 19:03:12.683  INFO 5212 --- [http-nio-9898-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 0efa8fb0f4c73d92
+2021-04-05 19:03:12.683  INFO 5212 --- [http-nio-9898-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1617629592682
+2021-04-05 19:03:12.687  INFO 5212 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: e4pq_CwCRSq-IwKNVcj2hw
+2021-04-05 19:03:12.703  INFO 5212 --- [http-nio-9898-exec-1] i.n.raghu.service.ProducerService        : SENDT SUCCESFULLY FROM PRODUCER!!
+2021-04-05 19:03:12.703  INFO 5212 --- [http-nio-9898-exec-1] i.n.raghu.rest.KafkaRestController       : REST CONTROLLER FINISHED SENDING
+2021-04-05 19:03:12.706  INFO 5212 --- [http-nio-9898-exec-1] i.n.raghu.rest.KafkaRestController       : RETURN FROM REST CONTROLLER  SEND MESSAGE
+2021-04-05 19:03:12.717  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] i.n.raghu.service.ConsumerService        : MESSAGE RECEIVED AT CONSUMER
+2021-04-05 19:03:12.894  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] in.nareshit.raghu.dao.MessageStore       : MESSAGE IS STORED AT DATABASE 1
+2021-04-05 19:03:12.894  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] i.n.raghu.service.ConsumerService        : MESSAGE IS PERSISTED BY STORE
+2021-04-05 19:04:11.463  INFO 5212 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-05 19:04:11.486  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group-id-1, groupId=group-id] Revoke previously assigned partitions my-tpc-0
+2021-04-05 19:04:11.487  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group-id: partitions revoked: [my-tpc-0]
+2021-04-05 19:04:11.487  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group-id-1, groupId=group-id] Member consumer-group-id-1-22cf831e-b9de-44d5-9317-d5e3f22fe9e8 sending LeaveGroup request to coordinator nit:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2021-04-05 19:04:11.488  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group-id-1, groupId=group-id] Unsubscribed all topics or patterns and assigned partitions
+2021-04-05 19:04:11.488  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2021-04-05 19:04:11.496  INFO 5212 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : group-id: Consumer stopped
+2021-04-05 19:04:11.500  INFO 5212 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-05 19:04:11.500  INFO 5212 --- [RMI TCP Connection(5)-127.0.0.1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-04-05 19:04:11.503  INFO 5212 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-05 19:04:11.506  INFO 5212 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-05 19:04:11.514  INFO 5212 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
